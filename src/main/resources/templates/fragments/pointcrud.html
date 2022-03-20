@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<div >
+	<form action="#" th:action="@{/add}" th:object="${pointDto}" method="POST" class="row g-3 was-validated needs-validation" >
+		<div class="row">
+			<div class="col-sm-12 text-center ">
+				<h1>Coordinate nuovo punto nello spazio</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<label for="point-x" class="form-label">X:</label>
+				<input class="form-control" type="number"  value=0step="any" th:field="*{x}" name="point-x" id="point-x" placeholder="Coordinata x" required />
+				<div class="invalid-feedback">
+					Inserire la coordinata X
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<label for="point-y" class="form-label">Y:</label>
+				<input class="form-control" type="number"  step="any" th:field="*{y}" name="point-y" id="point-y" placeholder="Coordinata y" required/>
+				<div class="invalid-feedback">
+					Inserire la coordinata Y
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class=" col-sm-4 ">
+				<button class="btn btn-success" type="submit" >Aggiungi</button>
+			</div>
+		</div>
+	</form>
+	
+</div>
