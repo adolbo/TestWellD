@@ -12,7 +12,7 @@ import lombok.EqualsAndHashCode;
  * parameter for for y=mx+q
  */
 @Data
-@EqualsAndHashCode(callSuper = false, of={"m","q","constantX")
+@EqualsAndHashCode(callSuper = false, of={"m","q","constantX"})
 public class SegmentDto {
 	private double m; //angle
 	private double q; //constant
