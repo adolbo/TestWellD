@@ -30,8 +30,8 @@ $(document).ready(function () {
 
 function wdFormatSegment(data) {
 	console.log(data);
-	if (data === null || data.length<=1) {
-		return "Inserire almeno due punti";
+	if (data === null || data.length===0) {
+		return "Rette non trovate";
 	}
 	let result = "<ul class=\"list-group\">";
 	for (let i = 0; i < data.length; ++i) {
